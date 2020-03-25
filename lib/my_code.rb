@@ -11,7 +11,14 @@ def map (source_array)
 end
 
 def reduce (source_array, starting_value =0)
-  
-  
-  
+  total = 0
+  counter = 0
+  while counter < source_array.length do
+    total += source_array[counter]
+    counter += 1
+  end
+  if starting_value != 0 
+    return starting_value + total
+  end
+  total
 end
