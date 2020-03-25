@@ -1,13 +1,12 @@
 # Your Code Here
 
-def map (source_array, block)
+def map (source_array)
   new_array = []
   counter = 0
   while counter < source_array.length do
-    new_array << source_array[counter]
+    new_array << yield(source_array[counter])
     counter += 1
   end
-  new_array.maplear do block end
   new_array
 end
 
