@@ -7,7 +7,7 @@ def map (source_array, block)
     new_array << source_array[counter]
     counter += 1
   end
-  new_array.map do block end
+  new_array.maplear do block end
   new_array
 end
 
